@@ -2,9 +2,9 @@
 
 This repo is a replicate of https://github.com/aerth/playwav
 
-The `playwav` repo is a great way to play wav files from command line, or to make music apps where each audio file is run only once, but for purposes like games, where every sound file can be played several times, it's too slow, since every time a file is played, it gets loaded from the disk.
+The `playwav` repo is a great way to play wav files from command line, or to make music apps where each audio file is run only once. However, for purposes like games (where every sound file can be played several times), this library is too slow, since every time a file is played, it gets loaded once again from the disk.
 
-This repo serves uses the same logic to create a wav player as the original one, but adding adaptation that allows replaying the audio without the need of reloading the file, hence suitable for purposes like game-making.
+This repo uses the same logic to create a wav player as the original one, but adds adaptation that allows replaying the audio without the need of reloading the file, hence suitable for purposes like game-making.
 
 ## How to use
 - Get the library: `go get "github.com/lthh91/WAVPlayer"`
